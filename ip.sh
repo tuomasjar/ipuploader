@@ -1,5 +1,6 @@
 #!/bin/sh
 #echo "Starting"
+cd /path/to/Script/
 T1=$(curl ifconfig.me) #Get external ip
 #echo $T1
 T2=$(tail -1 ip.txt) #Read the latest ip in the file
