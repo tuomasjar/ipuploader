@@ -10,8 +10,11 @@ Remember to:
 - Add permissions for file.content.write and read before you try to use the script to upload
 
 I made a crontab to run this script on every hour. 
+
 crontab -e
+
 (choose nano if nothing else chosen already (1))
+
 0 * * * * /path/to/Script/ip.sh
 
 Another good source for instructions: https://magpi.raspberrypi.org/articles/dropbox-raspberry-pi
