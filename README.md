@@ -19,5 +19,7 @@ crontab -e
 
 Another good source for instructions: https://magpi.raspberrypi.org/articles/dropbox-raspberry-pi
 
+Butted my head aainst the wall why cron wasn't working and finally realised it didn't find the correct ip.txt since it was executing from different path.
+
 TODO:
 Maybe add something to check if IP is on the list already and then move it to the end of the list.
