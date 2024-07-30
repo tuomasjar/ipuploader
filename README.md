@@ -1,13 +1,8 @@
 # ipuploader
-Checks external ip and uploads it to Dropbox if changed since last time.
+Checks external ip and uploads it to Github if changed since last time.
 Got fed up about not being able to check my raspberrys external ip while out-and-about where I most need it.
 
-Requires Dropbox uploader:
-https://github.com/andreafabrizi/Dropbox-Uploader.git
-
-Remember to: 
-- Add access token after installing and before using it
-- Add permissions for file.content.write and read before you try to use the script to upload
+Check script path and make it a git repo.
 
 I made a crontab to run this script on every hour. 
 
@@ -17,9 +12,5 @@ crontab -e
 
 0 * * * * /path/to/Script/ip.sh
 
-Another good source for instructions: https://magpi.raspberrypi.org/articles/dropbox-raspberry-pi
 
 Butted my head aainst the wall why cron wasn't working and finally realised it didn't find the correct ip.txt since it was executing from different path.
-
-TODO:
-Maybe add something to check if IP is on the list already and then move it to the end of the list.

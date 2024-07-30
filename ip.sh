@@ -10,8 +10,9 @@ if [ ${#T1} -le 20 ] ; then
         if [ !  "$T1" = "$T2" ]; then
                 echo &date >> ip.txt
                 echo $T1 >> ip.txt
-                cd /home/pi/Dropbox-Uploader/
-                ./dropbox_uploader.sh upload /home/pi/Scripts/ip.txt ip.txt
+                git add ip.txt
+				git commit -m "New IP"
+				git push
         else
                 echo "Found"
         fi
@@ -19,6 +20,8 @@ else
         echo &date >> ip.txt
         echo "Server error" >> ip.txt
         cd /home/pi/Dropbox-Uploader/
-        ./dropbox_uploader.sh upload /home/pi/Scripts/ip.txt ip.txt
+        git add ip.txt
+		git commit -m "Server Error"
+		git push
 fi
 
