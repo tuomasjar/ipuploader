@@ -1,6 +1,6 @@
 #!/bin/sh
 #echo "Starting"
-cd /home/pi/Scripts/
+cd /home/tuomas/scripts/ipuploader
 T1=$(curl ifconfig.me)
 #echo $T1
 T2=$(tail -1 ip.txt)
