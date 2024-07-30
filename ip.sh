@@ -19,7 +19,6 @@ if [ ${#T1} -le 20 ] ; then
 else
         echo &date >> ip.txt
         echo "Server error" >> ip.txt
-        cd /home/pi/Dropbox-Uploader/
         git add ip.txt
 		git commit -m "Server Error"
 		git push
